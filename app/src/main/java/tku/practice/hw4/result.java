@@ -56,6 +56,9 @@ public class result extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(message);
         builder.setTitle(status);
+        builder.setPositiveButton("OK",null);
+        builder.setNegativeButton("Cancel",null);
+        builder.setNeutralButton("Nothing",null);
         builder.show();
     }
 
